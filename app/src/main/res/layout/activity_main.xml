@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- TextView to display the counter -->
+    <TextView
+        android:id="@+id/counterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="24sp"
+        android:layout_gravity="center"/>
+
+    <!-- Button to increase the counter -->
+    <Button
+        android:id="@+id/increaseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Increase"
+        android:layout_gravity="center"/>
+
+    <!-- EditText for user input -->
+    <EditText
+        android:id="@+id/inputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text here"/>
+
+    <!-- CheckBox for user option -->
+    <CheckBox
+        android:id="@+id/optionCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show additional info"/>
+
+    <!-- TextView for additional information (shown/hidden by CheckBox) -->
+    <TextView
+        android:id="@+id/additionalInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Option selected"
+        android:visibility="gone"/>
+
+    <!-- Switch for dark mode -->
+    <Switch
+        android:id="@+id/darkModeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dark Mode"/>
+
+</LinearLayout>
